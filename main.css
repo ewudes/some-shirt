@@ -168,6 +168,10 @@ ul > li {
   background-color: var(--black);
 }
 
+.products {
+  margin-bottom: 160px;
+}
+
 .products__list {
   display: flex;
   flex-wrap: wrap;
@@ -276,4 +280,80 @@ ul > li {
 .btn:hover {
   background-color: var(--red);
   color: var(--white);
+}
+
+.collections {
+  margin-bottom: 135px;
+}
+
+.collections__list {
+  display: flex;
+}
+
+.collections__item {
+  position: relative;
+  min-height: 474px;
+  flex: 1;
+  overflow: hidden;
+  background-image: url('./img/bg/pattern.png');
+  background-position: center center;
+  background-size: 500px;
+}
+
+.collections__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.collections__item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 176%;
+  width: 60%;
+  top: -17%;
+  left: -18%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.collections__item--type-guys:before {
+  background-image: url('./img/collections/collection_man.png');
+}
+
+.collections__item--type-girls:before {
+  background-image: url('./img/collections/collection_woman.png');
+  width: 80%;
+  top: -31%;
+  left: -25%;
+}
+
+.collections__link {
+  position: relative;
+  display: block;
+  padding: 74px 13% 74px 44%;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.collections__link:hover .btn {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.collections__title {
+  font-family: var(--fontTitle);
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.collections__desc {
+  margin-bottom: 28px;
 }
