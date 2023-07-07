@@ -49,6 +49,6 @@
     "gulp-uglify": "3.0.2",
     "gulp-webp": "4.0.1",
     "posthtml-include": "1.7.1",
-    "stylelint": "13.13.1"
+    "stylelint": "15.10.1"
   }
 }
