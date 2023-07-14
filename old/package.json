@@ -34,7 +34,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "10.3.1",
-    "browser-sync": "2.27.5",
+    "browser-sync": "2.29.3",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-csso": "4.0.1",
