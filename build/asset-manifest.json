@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.611e3592.css",
+    "main.js": "/static/js/main.c0347d1c.js",
+    "static/media/collection_man.png": "/static/media/collection_man.04261bbd5adf280fa3c1.png",
+    "static/media/slider_pic_2.png": "/static/media/slider_pic_2.7e9d669652332c7564c0.png",
+    "static/media/collection_woman.png": "/static/media/collection_woman.7683f1a0a6798246a445.png",
+    "static/media/slider_pic_1.png": "/static/media/slider_pic_1.dd7fa90db318c358c3a9.png",
+    "static/media/slider_pic_3.png": "/static/media/slider_pic_3.99cc7bd1d7f6dd68fb38.png",
+    "static/media/tshirt_05.png": "/static/media/tshirt_05.30456690e10da698e3a4.png",
+    "static/media/tshirt_03.png": "/static/media/tshirt_03.3a70000e1556fa2fa98d.png",
+    "static/media/tshirt_04.png": "/static/media/tshirt_04.be7b6cba0e2a65a5510f.png",
+    "static/media/hero.jpg": "/static/media/hero.90e5bc2c0538dd100b2d.jpg",
+    "static/media/tshirt_02.png": "/static/media/tshirt_02.eff81e2b88ee8be01724.png",
+    "static/media/tshirt_06.png": "/static/media/tshirt_06.50a05ed27b5e8d0e4a5a.png",
+    "static/media/tshirt_01.png": "/static/media/tshirt_01.b4b1aa0dc123cc77a703.png",
+    "static/media/pattern.png": "/static/media/pattern.408412137549ee377362.png",
+    "static/media/alegreyasanssc-black-webfont.woff": "/static/media/alegreyasanssc-black-webfont.4cbf74cc9e4396272666.woff",
+    "static/media/alegreyasanssc-black-webfont.woff2": "/static/media/alegreyasanssc-black-webfont.8dc5133adf75cad2cdd1.woff2",
+    "static/media/logo-main.png": "/static/media/logo-main.8d535276b7b555b72155.png",
+    "static/media/icons-sprite.svg": "/static/media/icons-sprite.9556abc4d90acdcbc016c2dc2be5f1a7.svg",
+    "index.html": "/index.html",
+    "main.611e3592.css.map": "/static/css/main.611e3592.css.map",
+    "main.c0347d1c.js.map": "/static/js/main.c0347d1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.611e3592.css",
+    "static/js/main.c0347d1c.js"
+  ]
+}
