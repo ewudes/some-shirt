@@ -8,6 +8,7 @@ import Products from "../../components/products/products";
 import Collections from "../../components/collections/collections";
 import Navigation from "../../components/navigation/navigation";
 import Extras from "../../components/extras/extras";
+import IconsSVG from "../../static/img/icons-sprite.svg";
 
 import "./main.scss";
 
@@ -21,16 +22,17 @@ const Main = () => {
         </div>
         <aside className="sidebar">
           <Link to="" className="sidebar__hamburger">
-            <svg className="sidebar__hamburger-icon">
-              {/* <use xlink:href="./img/icons-sprite.svg#bars"></use> */}
+            <svg>
+              <use xlinkHref={`${IconsSVG}#bars`}></use>
             </svg>
           </Link>
           <div className="sidebar__header">
             <NavLink href="#" className="logo">
-              <img src="./img/content/logos/logo-main.png" alt="" className="logo__image"></img>
+              <img src={require("../../static/img/content/logos/logo-main.png")} alt="" className="logo__image"></img>
+              
               <Link to="" className="sidebar__close">
                 <svg className="sidebar__close-icon">
-                  {/* <use xlink:href="./img/icons-sprite.svg#cross"></use> */}
+                  <use xlinkHref={`${IconsSVG}#cross`}></use>
                 </svg>
               </Link>
             </NavLink>

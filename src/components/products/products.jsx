@@ -11,7 +11,7 @@ const Products = () => {
           <div className="products__price-amount">1 800</div>
         </div>
         <div className="products__content">
-          <img src="./img//tshirts/tshirt_01.png" alt="bo-jack tshirt" className="products__img"></img>
+          <img src={require("../../static/img/tshirts/tshirt_01.png")} alt="bo-jack tshirt" className="products__img"></img>
           <div className="products__desc">
             <div className="products__desc-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -25,7 +25,7 @@ const Products = () => {
           <div className="products__price-amount">1 800</div>
         </div>
         <div className="products__content">
-          <img src="./img//tshirts/tshirt_02.png" alt="bo-jack tshirt" className="products__img"></img>
+          <img src={require("../../static/img/tshirts/tshirt_02.png")} alt="bo-jack tshirt" className="products__img"></img>
           <div className="products__desc">
             <div className="products__desc-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -39,7 +39,7 @@ const Products = () => {
           <div className="products__price-amount">1 800</div>
         </div>
         <div className="products__content">
-          <img src="./img//tshirts/tshirt_03.png" alt="bo-jack tshirt" className="products__img"></img>
+          <img src={require("../../static/img/tshirts/tshirt_03.png")} alt="bo-jack tshirt" className="products__img"></img>
           <div className="products__desc">
             <div className="products__desc-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -53,7 +53,7 @@ const Products = () => {
           <div className="products__price-amount">1 800</div>
         </div>
         <div className="products__content">
-          <img src="./img//tshirts/tshirt_04.png" alt="bo-jack tshirt" className="products__img"></img>
+          <img src={require("../../static/img/tshirts/tshirt_04.png")} alt="bo-jack tshirt" className="products__img"></img>
           <div className="products__desc">
             <div className="products__desc-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -67,7 +67,7 @@ const Products = () => {
           <div className="products__price-amount">1 800</div>
         </div>
         <div className="products__content">
-          <img src="./img//tshirts/tshirt_05.png" alt="bo-jack tshirt" className="products__img"></img>
+          <img src={require("../../static/img/tshirts/tshirt_05.png")} alt="bo-jack tshirt" className="products__img"></img>
           <div className="products__desc">
             <div className="products__desc-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -81,7 +81,7 @@ const Products = () => {
           <div className="products__price-amount">1 800</div>
         </div>
         <div className="products__content">
-          <img src="./img//tshirts/tshirt_06.png" alt="bo-jack tshirt" className="products__img"></img>
+          <img src={require("../../static/img/tshirts/tshirt_06.png")} alt="bo-jack tshirt" className="products__img"></img>
           <div className="products__desc">
             <div className="products__desc-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import IconsSVG from "../../static/img/icons-sprite.svg";
 
 import "./extras.scss";
 
@@ -15,28 +16,28 @@ const Extras = () => {
             <li className="socials__item">
               <Link to="" className="socials__link">
                 <svg className="socials__icon">
-                  {/* <use xlink:href="./img/icons-sprite.svg#fb"></use> */}
+                  <use xlinkHref={`${IconsSVG}#fb`}></use>
                 </svg>
               </Link>
             </li>
             <li className="socials__item">
               <Link to="" className="socials__link">
                 <svg className="socials__icon">
-                  {/* <use xlink:href="./img/icons-sprite.svg#twitter"></use> */}
+                  <use xlinkHref={`${IconsSVG}#twitter`}></use>
                 </svg>
               </Link>
             </li>
             <li className="socials__item">
               <Link to="" className="socials__link">
                 <svg className="socials__icon">
-                  {/* <use xlink:href="./img/icons-sprite.svg#insta"></use> */}
+                  <use xlinkHref={`${IconsSVG}#insta`}></use>
                 </svg>
               </Link>
             </li>
             <li className="socials__item">
               <Link to="" className="socials__link">
                 <svg className="socials__icon">
-                  {/* <use xlink:href="./img/icons-sprite.svg#pin"></use> */}
+                  <use xlinkHref={`${IconsSVG}#pin`}></use>
                 </svg>
               </Link>
             </li>
