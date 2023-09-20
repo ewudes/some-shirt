@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Alegreya';
-  src: url('../../fonts/alegreyasanssc-black-webfont.woff2') format('woff2'),
-       url('../../fonts/alegreyasanssc-black-webfont.woff') format('woff');
+  src: url('../../static/fonts/alegreyasanssc-black-webfont.woff2') format('woff2'),
+       url('../../static/fonts/alegreyasanssc-black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +52,7 @@ ul > li {
   height: 100vh;
   min-height: 650px;
   background-color: var(--yellow);
-  background-image: url('../../img/bg/hero.jpg');
+  background-image: url('../../static/img/bg/hero.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ ul > li {
 }
  
 .fade-slider__item--style-thirts {
-  background-image: url('../../img/content/hero/slider_pic_1.png');
+  background-image: url('../../static/img/content/hero/slider_pic_1.png');
 }
 
 .fade-slider__item--style-tshirts .fade-slider__text {
@@ -219,7 +219,7 @@ ul > li {
 }
 
 .fade-slider__item--style-games {
-  background-image: url('../../img/content/hero/slider_pic_2.png');
+  background-image: url('../../static/img/content/hero/slider_pic_2.png');
 }
 
 .fade-slider__item--style-games .fade-slider__text {
@@ -233,7 +233,7 @@ ul > li {
 }
 
 .fade-slider__item--style-presents {
-  background-image: url('../../img/content/hero/slider_pic_3.png');
+  background-image: url('../../static/img/content/hero/slider_pic_3.png');
 }
 
 .fade-slider__item--style-presents .fade-slider__text {
@@ -434,7 +434,7 @@ ul > li {
   min-height: 474px;
   flex: 1;
   overflow: hidden;
-  background-image: url('../../img/bg/pattern.png');
+  background-image: url('../../static/img/bg/pattern.png');
   background-position: center center;
   background-size: 500px;
 }
@@ -457,11 +457,11 @@ ul > li {
 }
 
 .collections__item--type-guys:before {
-  background-image: url('../../img/collections/collection_man.png');
+  background-image: url('../../static/img/collections/collection_man.png');
 }
 
 .collections__item--type-girls:before {
-  background-image: url('../../img/collections/collection_woman.png');
+  background-image: url('../../static/img/collections/collection_woman.png');
   width: 80%;
   top: -31%;
   left: -25%;
@@ -586,7 +586,7 @@ ul > li {
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-image: url('../../img/bg/pattern.png');
+  background-image: url('../../static/img/bg/pattern.png');
   background-position: center center;
   background-size: 500px;
 }
