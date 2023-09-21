@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import "./collections.scss";
 
@@ -26,6 +26,6 @@ const Collections = () => {
       </li>
     </ul>
   );
-}
+};
 
 export default Collections;

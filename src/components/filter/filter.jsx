@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import "./filter.scss";
 
@@ -23,7 +23,7 @@ const Filter = () => {
       </li>
     </ul>
   );
-}
+};
 
 export default Filter;
 
