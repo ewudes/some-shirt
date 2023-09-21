@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import IconsSVG from "../../static/img/icons-sprite.svg";
 
 import "./extras.scss";
@@ -46,6 +46,6 @@ const Extras = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Extras;

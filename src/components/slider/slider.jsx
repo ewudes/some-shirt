@@ -1,18 +1,18 @@
 import React from "react";
-import "./slider.scss"
+
+import "./slider.scss";
 
 const Slider = () => {
-  const slides = document.querySelectorAll('.fade-slider__item');
-  const activeClass = "fade-slider__item--visible";
+  const slides = document.querySelectorAll(`.fade-slider__item`);
+  const activeClass = `fade-slider__item--visible`;
   let index = 0;
-   setInterval(function() {
+  setInterval(function () {
     slides[index].classList.remove(activeClass);
     index++;
-     if (index + 1 > slides.length) {
+    if (index + 1 > slides.length) {
       index = 0;
     }
-     slides[index].classList.add(activeClass);
-   
+    slides[index].classList.add(activeClass);
   }, 5000);
 
   return (
@@ -45,6 +45,6 @@ const Slider = () => {
       </li>
     </ul>
   );
-}
+};
 
 export default Slider;

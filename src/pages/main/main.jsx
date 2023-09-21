@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, {useState} from "react";
+import {Link, NavLink} from "react-router-dom";
 import Header from "../../components/header/header";
 import Slider from "../../components/slider/slider";
 import Menu from "../../components/menu/menu";
@@ -16,8 +16,8 @@ const Main = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
 
   const handleShowMenu = () => {
-    setIsShowMenu(current => !current);
-  }
+    setIsShowMenu((current) => !current);
+  };
 
   return (
     <div className="wrapper">
@@ -26,7 +26,7 @@ const Main = () => {
         <div className="hero__content">
           <Slider />
         </div>
-        <aside className={`${isShowMenu ? "sidebar--opened" : ''} sidebar`}>
+        <aside className={`${isShowMenu ? `sidebar--opened` : ``} sidebar`}>
           <Link to="" className="sidebar__hamburger" onClick={handleShowMenu}>
             <svg className="sidebar__hamburger-icon">
               <use xlinkHref={`${IconsSVG}#bars`}></use>
@@ -34,8 +34,7 @@ const Main = () => {
           </Link>
           <div className="sidebar__header">
             <NavLink href="#" className="logo">
-              <img src={require("../../static/img/content/logos/logo-main.png")} alt="" className="logo__image"></img>
-              
+              <img src={require(`../../static/img/content/logos/logo-main.png`)} alt="" className="logo__image"></img>
               <Link to="" className="sidebar__close" onClick={handleShowMenu}>
                 <svg className="sidebar__close-icon">
                   <use xlinkHref={`${IconsSVG}#cross`}></use>
@@ -68,6 +67,6 @@ const Main = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default Main;
