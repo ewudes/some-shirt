@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Header from "../../components/header/header";
 import Slider from "../../components/slider/slider";
@@ -13,6 +13,12 @@ import IconsSVG from "../../static/img/icons-sprite.svg";
 import "./main.scss";
 
 const Main = () => {
+  const [isShowMenu, setIsShowMenu] = useState(false);
+
+  const handleShowMenu = () => {
+    setIsShowMenu(current => !current);
+  }
+
   return (
     <div className="wrapper">
       <section className="hero">
@@ -20,9 +26,9 @@ const Main = () => {
         <div className="hero__content">
           <Slider />
         </div>
-        <aside className="sidebar">
-          <Link to="" className="sidebar__hamburger">
-            <svg>
+        <aside className={`${isShowMenu ? "sidebar--opened" : ''} sidebar`}>
+          <Link to="" className="sidebar__hamburger" onClick={handleShowMenu}>
+            <svg className="sidebar__hamburger-icon">
               <use xlinkHref={`${IconsSVG}#bars`}></use>
             </svg>
           </Link>
@@ -30,7 +36,7 @@ const Main = () => {
             <NavLink href="#" className="logo">
               <img src={require("../../static/img/content/logos/logo-main.png")} alt="" className="logo__image"></img>
               
-              <Link to="" className="sidebar__close">
+              <Link to="" className="sidebar__close" onClick={handleShowMenu}>
                 <svg className="sidebar__close-icon">
                   <use xlinkHref={`${IconsSVG}#cross`}></use>
                 </svg>
