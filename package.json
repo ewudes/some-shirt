@@ -17,12 +17,12 @@
   "homepage": "https://github.com/ewudes/some-shirt#readme",
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "6.8.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "eslint": "8.49.0",
+    "eslint": "^8.49.0",
     "eslint-config-htmlacademy": "10.0.0",
     "eslint-plugin-react": "7.33.2",
     "node-sass": "8.0.0"
