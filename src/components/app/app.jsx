@@ -1,6 +1,7 @@
-import React from 'react';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
-import Main from '../../pages/main/main';
+import React from "react";
+import {Routes, Route, BrowserRouter} from "react-router-dom";
+import Main from "../../pages/main/main";
+// import Product from "../../pages/product/product";
 
 const App = () => {
   return (
