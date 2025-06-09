@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Header from "../../components/header/header";
 import Slider from "../../components/slider/slider";
 import Menu from "../../components/menu/menu";
@@ -33,14 +33,14 @@ const Main = () => {
             </svg>
           </Link>
           <div className="sidebar__header">
-            <NavLink href="#" className="logo">
-              <img src={require(`../../static/img/content/logos/logo-main.png`)} alt="" className="logo__image"></img>
+            <div className="logo">
+              <img src={require(`../../static/img/content/logos/logo-main.png`)} width={100} height={100} alt="" className="logo__image"></img>
               <Link to="" className="sidebar__close" onClick={handleShowMenu}>
                 <svg className="sidebar__close-icon">
                   <use xlinkHref={`${IconsSVG}#cross`}></use>
                 </svg>
               </Link>
-            </NavLink>
+            </div>
           </div>
           <Menu />
         </aside>
