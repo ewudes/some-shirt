@@ -145,7 +145,7 @@ ul > li {
 }
 
 .side-menu__item {
- margin-bottom: 20px; 
+ margin-bottom: 20px;
 }
 
 .side-menu__link {
@@ -207,7 +207,7 @@ ul > li {
 .fade-slider__item--visible {
   opacity: 1;
 }
- 
+
 .fade-slider__item--style-thirts {
   background-image: url('../../static/img/content/hero/slider_pic_1.png');
 }
@@ -241,7 +241,7 @@ ul > li {
   bottom: 0;
   transform: translateY(-120%);
 }
-  
+
 .fade-slider__item--style-presents .lined-text {
   align-items: center;
 }
@@ -274,37 +274,6 @@ ul > li {
 
 .lined-text__word--color-yellow {
   color: var(--yellow);
-}
-
-.filter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.filter__link {
-  font-family: var(--fontTitle);
-  text-transform: uppercase;
-  padding: 3px 21px;
-  color: var(--black);
-  font-size: 24px;
-  font-weight: bold;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.filter__link:hover {
-  color: var(--red);
-}
-
-.filter__item--active .filter__link {
-  color: var(--yellow);
-  background-color: var(--black);
 }
 
 .products {
@@ -405,7 +374,7 @@ ul > li {
   max-height: 100%;
 }
 
-.btn { 
+.btn {
   text-transform: uppercase;
   font-family: var(--fontTitle);
   font-size: 24px;
@@ -419,82 +388,6 @@ ul > li {
 .btn:hover {
   background-color: var(--red);
   color: var(--white);
-}
-
-.collections {
-  margin-bottom: 135px;
-}
-
-.collections__list {
-  display: flex;
-}
-
-.collections__item {
-  position: relative;
-  min-height: 474px;
-  flex: 1;
-  overflow: hidden;
-  background-image: url('../../static/img/bg/pattern.png');
-  background-position: center center;
-  background-size: 500px;
-}
-
-.collections__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.collections__item:before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 176%;
-  width: 60%;
-  top: -17%;
-  left: -18%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.collections__item--type-guys:before {
-  background-image: url('../../static/img/collections/collection_man.png');
-}
-
-.collections__item--type-girls:before {
-  background-image: url('../../static/img/collections/collection_woman.png');
-  width: 80%;
-  top: -31%;
-  left: -25%;
-}
-
-.collections__link {
-  position: relative;
-  display: block;
-  padding: 74px 13% 74px 44%;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 15px;
-}
-
-.collections__link:hover .btn {
-  background-color: var(--red);
-  color: var(--white);
-}
-
-.collections__title {
-  font-family: var(--fontTitle);
-  font-size: 70px;
-  font-weight: bold;
-  line-height: 1;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 11px;
-}
-
-.collections__desc {
-  margin-bottom: 28px;
 }
 
 .footer {
