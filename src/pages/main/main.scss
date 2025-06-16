@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Alegreya';
-  src: url('../../static/fonts/alegreyasanssc-black-webfont.woff2') format('woff2'),
-       url('../../static/fonts/alegreyasanssc-black-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --yellow: #ffc92f;
   --red: #d82727;
@@ -14,66 +6,12 @@
   --fontTitle: 'Yanone Kaffeesatz', Arial, sans-serif
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  font-size: 16px / 1.42;
-  font-family: 'Roboto', Arial, sans-serif;
-  color: #212121;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fcf5e6;
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul > li {
-  list-style: none;
-}
-
-.wrapper {
-  overflow: hidden;
-  min-width: 1440px;
-}
-
-.container {
-  width: 1300px;
-  margin: 0 auto;
-}
-
-.hero {
-  position: relative;
-  height: 100vh;
-  min-height: 650px;
-  background-color: var(--yellow);
-  background-image: url('../../static/img/bg/hero.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 130px;
-}
-
-.hero__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1140px;
-  height: 72%;
-}
-
 .sidebar {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 75px;
+  width: 60px;
   background-color: var(--black);
   box-sizing: border-box;
   display: flex;
@@ -157,31 +95,6 @@ ul > li {
 }
 .side-menu__link:hover {
   color: var(--red);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1290px;
-  margin: 0 auto;
-  padding-top: 27px;
-}
-
-.mail {
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-}
-
-.mail__title {
-  margin-bottom: 3px;
-}
-
-.mail__content {
-  background-color: var(--black);
-  color: var(--yellow);
-  padding: 5px 10px;
 }
 
 .fade-slider {
@@ -276,104 +189,6 @@ ul > li {
   color: var(--yellow);
 }
 
-.products {
-  margin-bottom: 160px;
-}
-
-.products__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -27px;
-}
-
-.products__item {
-  width: 302px;
-  margin-left: 27px;
-  height: 386px;
-  background: var(--yellow);
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.products__price {
-  position: absolute;
-  top: 18px;
-  left: -6px;
-  width: 126px;
-  border-bottom: 45px solid var(--black);
-  border-left: 5px solid transparent;
-  border-right: 2px solid transparent;
-  transform: rotate(-181deg);
-}
-
-.products__price-amount {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: var(--fontTitle);
-  color: var(--white);
-  transform: rotate(181deg);
-  position: absolute;
-  top: 2px;
-  right: 28px;
-}
-
-.products__item--color-black {
-  background-color: var(--black);
-}
-
-.products__item--color-black .products__price {
-  border-bottom-color: var(--yellow);
-}
-
-.products__item--color-black .products__price-amount {
-  color: var(--black);
-}
-
-.products__item--size-double {
-  width: 631px;
-  height: 544px;
-}
-
-.products__item:hover .products__desc{
-  transform: translateY(0%);
-}
-
-.products__content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.products__desc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 23px 30px;
-  background-color: rgba(35, 35, 35, .8);
-  font-size: 15px;
-  color: var(--white);
-  transform: translateY(100%);
-  transition: transform .3s;
-}
-
-.products__desc-text {
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-.products__img {
-  display: block;
-  max-width: 90%;
-  max-height: 100%;
-}
-
 .btn {
   text-transform: uppercase;
   font-family: var(--fontTitle);
@@ -445,43 +260,6 @@ ul > li {
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
-}
-
-.extras {
-  display: flex;
-  margin-bottom: 95px;
-}
-
-.extras__col {
-  flex: 1;
-}
-
-.extras__col:not(:last-child) {
-  margin-right: 20px;
-}
-
-.extras__best {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  color: var(--white);
-  background-color: var(--black);
-  font-weight: bold;
-  font-size: 50px;
-  font-family: var(--fontTitle);
-  text-transform: uppercase;
-  padding: 39px 10%;
-  line-height: 1;
-}
-
-.extras__col-socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-image: url('../../static/img/bg/pattern.png');
-  background-position: center center;
-  background-size: 500px;
 }
 
 .socials {

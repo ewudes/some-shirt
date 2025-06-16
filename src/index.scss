@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Alegreya';
+  src: url('./static/fonts/alegreyasanssc-black-webfont.woff2') format('woff2'),
+       url('./static/fonts/alegreyasanssc-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px / 1.42;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #212121;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fcf5e6;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+#root {
+  overflow: hidden;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
