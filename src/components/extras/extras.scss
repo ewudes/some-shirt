@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+
+.extras {
+  display: flex;
+  margin-bottom: 95px;
+
+  &__col {
+    flex: 1;
+
+    &::not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__best {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: $light-font-color;
+    background-color: $dark-bg-color;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: $font-title;
+    text-transform: uppercase;
+    padding: 39px 10%;
+    line-height: 1;
+  }
+
+  &__col-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url('../../static/img/bg/pattern.png');
+    background-position: center center;
+    background-size: 500px;
+  }
+}
