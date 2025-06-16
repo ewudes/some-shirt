@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 27px;
+
+  &__mail {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+  }
+
+  &__mail-title {
+    margin-bottom: 3px;
+  }
+
+  &__mail-content {
+    background-color: var(--black);
+    color: var(--yellow);
+    padding: 5px 10px;
+  }
+}
