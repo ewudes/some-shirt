@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .collections {
   margin-bottom: 135px;
 
@@ -55,12 +57,12 @@
   }
 
   &__link:hover .btn {
-    background-color: var(--red);
-    color: var(--white);
+    background-color: $colorful-bg-color;
+    color: $light-font-color;
   }
 
   &__title {
-    font-family: var(--fontTitle);
+    font-family: $font-title;
     font-size: 70px;
     font-weight: bold;
     line-height: 1;
