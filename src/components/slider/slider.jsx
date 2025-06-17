@@ -3,10 +3,10 @@ import "./slider.scss";
 
 const Slider = () => {
   const sliderRef = useRef(null);
-  const activeClass = `fade-slider__item--visible`;
+  const activeClass = `slider__item--visible`;
 
   useEffect(() => {
-    const slides = sliderRef.current.querySelectorAll(`.fade-slider__item`);
+    const slides = sliderRef.current.querySelectorAll(`.slider__item`);
     let index = 0;
 
     const intervalId = setInterval(() => {
@@ -19,9 +19,9 @@ const Slider = () => {
   }, []);
 
   return (
-    <ul className="fade-slider" ref={sliderRef}>
-      <li className="fade-slider__item fade-slider__item--style-thirts fade-slider__item--visible">
-        <div className="fade-slider__text">
+    <ul className="slider" ref={sliderRef}>
+      <li className="slider__item slider__item--style-thirts slider__item--visible">
+        <div className="slider__text">
           <h1 className="lined-text">
             <span className="lined-text__word">три</span>
             <span className="lined-text__word">футболки</span>
@@ -30,16 +30,16 @@ const Slider = () => {
           </h1>
         </div>
       </li>
-      <li className="fade-slider__item fade-slider__item--style-games">
-        <div className="fade-slider__text">
+      <li className="slider__item slider__item--style-games">
+        <div className="slider__text">
           <h1 className="lined-text">
             <span className="lined-text__word">Любимые игры</span>
             <span className="lined-text__word lined-text__word--color-yellow">на лучших футболках</span>
           </h1>
         </div>
       </li>
-      <li className="fade-slider__item fade-slider__item--style-presents">
-        <div className="fade-slider__text">
+      <li className="slider__item slider__item--style-presents">
+        <div className="slider__text">
           <h1 className="lined-text">
             <span className="lined-text__word">Подарки</span>
             <span className="lined-text__word lined-text__word--color-yellow">для любимых</span>
