@@ -1,0 +1,21 @@
+.menu {
+  position: absolute;
+  left: -400px;
+  transition: left .3s;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: var(--yellow);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fontTitle);
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+}
