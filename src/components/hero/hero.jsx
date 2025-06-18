@@ -5,16 +5,14 @@ import Sidebar from "../sidebar/sidebar";
 
 import "./hero.scss";
 
-const Hero = () => {
-  return (
-    <section className="hero">
-      <Header />
-      <div className="hero__content">
-        <Slider />
-      </div>
-      <Sidebar />
-    </section>
-  );
-};
+const Hero = () => (
+  <section className="hero">
+    <Header />
+    <div className="hero__content">
+      <Slider />
+    </div>
+    <Sidebar />
+  </section>
+);
 
 export default Hero;

@@ -1,51 +1,64 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useState} from "react";
 import "./slider.scss";
 
+const slides = [
+  {
+    id: 1,
+    className: `slider__item--style-thirts`,
+    text: (
+      <>
+        <span className="lined-text__word">три</span>
+        <span className="lined-text__word">футболки</span>
+        <span className="lined-text__word lined-text__word--color-yellow">по цене</span>
+        <span className="lined-text__word lined-text__word--color-yellow">двух</span>
+      </>
+    ),
+  },
+  {
+    id: 2,
+    className: `slider__item--style-games`,
+    text: (
+      <>
+        <span className="lined-text__word">Любимые игры</span>
+        <span className="lined-text__word lined-text__word--color-yellow">на лучших футболках</span>
+      </>
+    ),
+  },
+  {
+    id: 3,
+    className: `slider__item--style-presents`,
+    text: (
+      <>
+        <span className="lined-text__word">Подарки</span>
+        <span className="lined-text__word lined-text__word--color-yellow">для любимых</span>
+      </>
+    ),
+  },
+];
+
 const Slider = () => {
-  const sliderRef = useRef(null);
-  const activeClass = `slider__item--visible`;
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const slides = sliderRef.current.querySelectorAll(`.slider__item`);
-    let index = 0;
-
     const intervalId = setInterval(() => {
-      slides[index].classList.remove(activeClass);
-      index = (index + 1) % slides.length;
-      slides[index].classList.add(activeClass);
+      setActiveIndex((prev) => (prev + 1) % slides.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <ul className="slider" ref={sliderRef}>
-      <li className="slider__item slider__item--style-thirts slider__item--visible">
-        <div className="slider__text">
-          <h1 className="lined-text">
-            <span className="lined-text__word">три</span>
-            <span className="lined-text__word">футболки</span>
-            <span className="lined-text__word lined-text__word--color-yellow">по цене</span>
-            <span className="lined-text__word lined-text__word--color-yellow">двух</span>
-          </h1>
-        </div>
-      </li>
-      <li className="slider__item slider__item--style-games">
-        <div className="slider__text">
-          <h1 className="lined-text">
-            <span className="lined-text__word">Любимые игры</span>
-            <span className="lined-text__word lined-text__word--color-yellow">на лучших футболках</span>
-          </h1>
-        </div>
-      </li>
-      <li className="slider__item slider__item--style-presents">
-        <div className="slider__text">
-          <h1 className="lined-text">
-            <span className="lined-text__word">Подарки</span>
-            <span className="lined-text__word lined-text__word--color-yellow">для любимых</span>
-          </h1>
-        </div>
-      </li>
+    <ul className="slider">
+      {slides.map((slide, index) => (
+        <li
+          key={slide.id}
+          className={`slider__item ${slide.className} ${index === activeIndex && `slider__item--visible`}`}
+        >
+          <div className="slider__text">
+            <h1 className="lined-text">{slide.text}</h1>
+          </div>
+        </li>
+      ))}
     </ul>
   );
 };
