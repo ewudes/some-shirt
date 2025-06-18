@@ -8,31 +8,30 @@ import Extras from "../../components/extras/extras";
 
 import "./main.scss";
 
-const Main = () => {
-  return (
-    <>
-      <Hero/>
-      <section className="products">
-        <div className="container">
-          <Filter />
-          <Products />
-        </div>
-      </section>
+const Main = () => (
+  <>
+    <Hero />
 
-      <div className="collections">
-        <div className="container">
-          <Collections />
-        </div>
+    <section className="products">
+      <div className="container">
+        <Filter />
+        <Products />
       </div>
+    </section>
 
-      <footer className="footer">
-        <div className="container footer__container">
-          <Navigation />
-          <Extras />
-        </div>
-      </footer>
-    </>
-  );
-};
+    <section className="collections">
+      <div className="container">
+        <Collections />
+      </div>
+    </section>
+
+    <footer className="footer">
+      <div className="container footer__container">
+        <Navigation />
+        <Extras />
+      </div>
+    </footer>
+  </>
+);
 
 export default Main;
