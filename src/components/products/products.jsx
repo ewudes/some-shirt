@@ -7,7 +7,7 @@ import "./products.scss";
 const productData = [
   {
     id: 1,
-    price: 1800,
+    price: 1300,
     image: `tshirt_01.png`,
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
     className: `new bestsellers`,
@@ -21,7 +21,7 @@ const productData = [
   },
   {
     id: 3,
-    price: 1800,
+    price: 2000,
     image: `tshirt_03.png`,
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
     className: `products__item--color-black products__item--size-double soon bestsellers`,
