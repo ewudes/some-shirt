@@ -4,12 +4,8 @@
   margin-bottom: 160px;
 
   &__list {
-    grid-auto-flow: dense;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: -27px;
   }
 
