@@ -1,11 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import logoMain from "../../static/img/content/logos/logo-main.png";
+import IconsSVG from "../../static/img/icons-sprite.svg";
 
 import "./header.scss";
-
-const CONTACT_EMAIL = `someshirt@gmail.com`;
-const MAILTO_LINK = `mailto:lostinspace@mail.ru`;
 
 const Header = () => (
   <header className="header">
@@ -13,14 +11,18 @@ const Header = () => (
       <img
         src={logoMain}
         alt="SomeShirt Logo"
-        width={100}
-        height={100}
+        width={150}
+        height={150}
         className="header__pic"
       />
     </Link>
-    <a href={MAILTO_LINK} className="header__mail">
-      <div className="header__mail-title">По всем вопросам пишите на:</div>
-      <div className="header__mail-content">{CONTACT_EMAIL}</div>
+    <a href="#" className="header__basket-content">
+      <svg className="header__basket-icon">
+        <use xlinkHref={`${IconsSVG}#basket`} />
+      </svg>
+      <div className="header__basket-label">
+        57
+      </div>
     </a>
   </header>
 );
