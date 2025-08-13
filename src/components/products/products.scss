@@ -4,14 +4,16 @@
   margin-bottom: 160px;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
     margin-left: -27px;
   }
 
   &__item {
-    width: 302px;
+    grid-column: span 1;
     margin-left: 27px;
+    grid-row: span 1;
     height: 386px;
     background-color: $accent-bg-color;
     position: relative;
@@ -54,7 +56,9 @@
     }
 
     &--size-double {
-      width: 631px;
+      grid-column: span 2;
+      // width: 631px;
+      grid-row: span 2;
       height: 544px;
     }
 
