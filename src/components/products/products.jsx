@@ -62,7 +62,7 @@ const ProductItem = ({price, image, desc, className}) => (
       />
       <div className="products__desc">
         <div className="products__desc-text">{desc}</div>
-        <Link to="" className="btn">Подробнее</Link>
+        <Link to="/product" className="btn">Подробнее</Link>
       </div>
     </div>
   </li>
