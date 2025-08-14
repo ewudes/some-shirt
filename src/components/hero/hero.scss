@@ -7,7 +7,6 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 130px;
 
   &__arrow {
     position: absolute;
@@ -19,6 +18,8 @@
 
   &__arrow-icon {
     width: 80px;
+    animation: pulseArrow 4s infinite ease-in-out;
+    transform-origin: center;
   }
 }
 
@@ -29,4 +30,19 @@
   transform: translate(-50%, -50%);
   width: 1140px;
   height: 72%;
+}
+
+@keyframes pulseArrow {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.10);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
 }
