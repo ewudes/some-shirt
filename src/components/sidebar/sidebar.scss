@@ -11,7 +11,14 @@
   justify-content: center;
   flex-direction: column;
   transition: width .3s;
+  z-index: 10;
 
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+  }
 
   &--opened {
     width: 305px;
@@ -37,6 +44,7 @@
     width: 29px;
     height: 29px;
     fill: var(--yellow);
+    cursor: pointer;
   }
 
   &__hamburger {

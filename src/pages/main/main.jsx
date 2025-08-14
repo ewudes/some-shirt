@@ -12,7 +12,7 @@ const Main = () => (
   <>
     <Hero />
 
-    <section className="products">
+    <section className="products" id="products">
       <div className="container">
         <Filter />
         <Products />
