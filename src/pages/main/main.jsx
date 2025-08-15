@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../../components/hero/hero";
-import Filter from "../../components/filter/filter";
 import Products from "../../components/products/products";
 import Collections from "../../components/collections/collections";
 import Navigation from "../../components/navigation/navigation";
@@ -14,7 +13,6 @@ const Main = () => (
 
     <section className="products" id="products">
       <div className="container">
-        <Filter />
         <Products />
       </div>
     </section>
