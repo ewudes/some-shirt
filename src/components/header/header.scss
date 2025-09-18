@@ -1,11 +1,5 @@
 .header {
-  display: flex;
-  width: 1280px;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
   height: 180px;
-  // padding-top: 27px;
 
   &__basket {
     text-decoration: none;
@@ -17,7 +11,18 @@
     margin-bottom: 3px;
   }
 
+  &__banner {
+    width: 450px;
+    height: 100%;
+    background-image: url('../../static/img/decor/slider_text_1.png'),
+                      url('../../static/img/decor/header-guys.png');
+    background-repeat: no-repeat;
+    background-size: 45%, 80%;
+    background-position: left, right;
+  }
+
   &__basket-content {
+    display: block;
     width: 50px;
     height: 50px;
     text-decoration: none;
