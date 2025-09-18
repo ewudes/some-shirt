@@ -1,15 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import IconsSVG from "../../static/img/icons-sprite.svg";
+import Header from "../../components/header/header";
 
 import "./product.scss";
 
-const headerTitleWords = [
-  {text: `три`},
-  {text: `футболки`},
-  {text: `по цене`, yellow: true},
-  {text: `двух`, yellow: true},
-];
+// const headerTitleWords = [
+//   {text: `три`},
+//   {text: `футболки`},
+//   {text: `по цене`, yellow: true},
+//   {text: `двух`, yellow: true},
+// ];
 
 const sizes = [
   {label: `XXS`, disabled: true},
@@ -84,8 +85,9 @@ const footerData = [
 const socialIcons = [`fb`, `twitter`, `insta`, `pin`];
 
 const Product = () => (
-  <div className="wrapper">
-    <header className="inner-header">
+  <div className="product">
+    <Header />
+    {/* <header className="inner-header">
       <div className="container inner-header__container">
         <Link to="/" className="logo">
           <img
@@ -113,7 +115,7 @@ const Product = () => (
           <div className="mail__content">lostinspace@mail.ru</div>
         </Link>
       </div>
-    </header>
+    </header> */}
     <main className="page-content">
       <div className="container page-content__container">
         <div className="product-showroom">
