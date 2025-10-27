@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../../components/hero/hero";
 import Products from "../../components/products/products";
 import Collections from "../../components/collections/collections";
