@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import Menu from "../menu/menu";
 import IconsSVG from "../../static/img/icons-sprite.svg";
 
