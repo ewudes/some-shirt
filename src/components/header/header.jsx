@@ -1,4 +1,3 @@
-import React from "react";
 import {Link, useLocation} from "react-router-dom";
 import logoMain from "../../static/img/content/logos/logo-main.png";
 import IconsSVG from "../../static/img/icons-sprite.svg";
