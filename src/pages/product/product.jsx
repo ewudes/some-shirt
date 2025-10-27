@@ -1,4 +1,3 @@
-import React from "react";
 import {Link} from "react-router-dom";
 import IconsSVG from "../../static/img/icons-sprite.svg";
 import Header from "../../components/header/header";
