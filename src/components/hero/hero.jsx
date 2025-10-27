@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../header/header";
 import Slider from "../slider/slider";
 import Sidebar from "../sidebar/sidebar";
